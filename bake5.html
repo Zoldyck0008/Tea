@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>French Onion Soup Twist</title>
+<style>
+    .product {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: 20px auto;
+        width: 500px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    .product img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .title {
+        font-weight: bold;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .input-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .input-group label {
+        flex: 1;
+        margin-right: 10px;
+    }
+
+    .input-group input {
+        flex: 2;
+    }
+    .price {
+        font-weight: bold;
+    }
+    .variant {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .variant label {
+        margin-right: 5px;
+    }
+    .btn {
+        cursor: pointer;
+        padding: 5px 10px;
+        background-color: #d3ad7f;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        margin-top: 10px;
+        text-decoration: none;
+        display: inline-block
+    }
+    .btn:hover {
+        background-color: #45a049;
+    }
+    #note {
+        width: 100%;
+        margin-top: 10px;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    @media (max-width: 600px) {
+    .product {
+        padding: 0px;
+        width: 100%; 
+    }
+    .variant {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+}
+</style>
+</head>
+<body>
+    <div class="product">
+        <img src="bake5.jpeg" alt="Product Image">
+        <div class="title">
+            <div>French Onion Soup Twist</div>
+            <div class="price">P145.00</div>
+        </div>
+        <div>
+            <span>Quantity:</span>
+            <button class="btn" id="decrement"> - </button>
+            <span id="quantity">1</span>
+            <button class="btn" id="increment"> + </button>
+        </div>
+        <br>
+        <a class="btn" href="index.html" target="_blank">Add to Cart</a>
+    
+<script>
+    var decrementBtn = document.getElementById('decrement');
+    var incrementBtn = document.getElementById('increment');
+    var quantityDisplay = document.getElementById('quantity');
+
+    decrementBtn.addEventListener('click', function() {
+        var quantity = parseInt(quantityDisplay.textContent);
+        if (quantity > 1) {
+            quantityDisplay.textContent = quantity - 1;
+        }
+    });
+
+    incrementBtn.addEventListener('click', function() {
+        var quantity = parseInt(quantityDisplay.textContent);
+        quantityDisplay.textContent = quantity + 1;
+    });
+</script>
+
+</body>
+</html>

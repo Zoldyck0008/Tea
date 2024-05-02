@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        section{
+            padding:2rem 7%;
+        }
+        .heading{
+            text-align: center;
+            color: #fff;
+            text-transform: uppercase;
+            padding-bottom: 0rem;
+            font-size: 4rem;
+        }
+        @media (max-width: 768px) {
+            .heading {
+                font-size: 3rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .heading {
+                font-size: 2rem;
+            }
+        }
+        .heading span{
+            color: #d3ad7f;
+        }
+        .btn{
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+            text-decoration: none;
+            display: inline-block;
+            padding: .5rem .5rem;
+            font-size: 1rem;
+            color: #fff;
+            background: #d3ad7f;
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+        }
+        @media (max-width: 768px) {
+            .btn {
+                padding: 0.5rem 0.5rem;
+            }
+        }
+        .btn:hover{
+            letter-spacing: .2rem;
+        }
+        body{
+            background-color: black;
+        }
+        .menu .box-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+            gap: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .menu .box-container {
+                grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+            }
+        @media (max-width: 480px) {
+            .menu .box-container {
+                grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+            }
+        }
+        }
+        .menu .box-container .box{
+            padding: 1rem;
+            text-align: center;
+            border: .1rem solid rgba(255,255,255,.3);
+        }
+        .menu .box-container .box img{
+            height: auto;
+            padding: .20rem;
+            width: 100%;
+        }
+        .menu .box-container .box h3{
+            color: #fff;
+            font-size: 1rem;
+            padding: 1rem 0;
+        }
+        .menu .box-container .box .price{
+            color: #fff;
+            font-size: 1.2rem;
+            padding: .5rem;
+        }
+        .menu .box-container .box .price span{
+            font-size: 1rem;
+            text-decoration: line-through;
+        }
+        .menu .box-container .box:hover{
+            background: white;
+        }*
+        .menu .box-container .box:hover > *{
+            color: black;
+        }
+        .btnn {
+            cursor: pointer;
+            padding: 5px 10px;
+            background-color: #d3ad7f;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            margin-top: 10px;
+            margin-left: 700px;
+            text-decoration: none; 
+            display: inline-block;
+            text-align: center;
+        }
+        @media (max-width: 480px) {
+            .btnn {
+                display: block;
+                margin-left: 0;
+            }
+        }
+        .btnn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <section class="menu" id="menu">
+        <h1 class="heading">Ca<span>ke</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="cake1.jpeg" alt="">
+                <h3>Banoffee Pie</h3>
+                <div class="price">P165.00<span></span></div>
+                <a href="cake1.html" class="btn">Add to Cart</a>
+            </div>
+    
+            <div class="box">
+                <img src="cake2.jpeg" alt="">
+                <h3>New York Cheesecake</h3>
+                <div class="price">P145.00<span></span></div>
+                <a href="cake2.html" class="btn">Add to Cart</a>
+            </div>
+    
+            <div class="box">
+                <img src="cake3.jpeg" alt="">
+                <h3>Blueberry Licious Cheesecake</h3>
+                <div class="price">P115.00<span></span></div>
+                <a href="cake3.html" class="btn">Add to Cart</a>
+            </div>
+    
+            <div class="box">
+                <img src="cake4.jpeg" alt="">
+                <h3>Classic Chocolate Cake</h3>
+                <div class="price">P145.00<span></span></div>
+                <a href="cake4.html" class="btn">Add to Cart</a>
+            </div>
+        </div>
+    </section>
+    <a class="btnn" href="index.html" target="_blank">Back to Home</a>
+</body>
+</html>

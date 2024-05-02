@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chocolate Cream Frappucino</title>
+<style>
+    .product {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: 20px auto;
+        width: 500px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    h4{
+        text-align: left;
+    }
+
+    .product img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .title {
+        font-weight: bold;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        font-size: large; 
+    }
+
+    .price {
+        font-weight: bold;
+    }
+
+    .variant {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+    }
+
+    .variant label {
+        margin-right: 5px;
+    }
+
+    .btn {
+        cursor: pointer;
+        padding: 5px 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        margin-top: 10px;
+        text-decoration: none; 
+        display: inline-block; 
+    }
+
+    .btn:hover {
+        background-color: #45a049;
+    }
+    @media (max-width: 600px) {
+    .product {
+        padding: 0px;
+        width: 100%; 
+    }
+    .variant {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+}
+</style>
+</head>
+<body>
+<div class="product">
+    <img src="fr9.jpg" alt="Product Image">
+    <div class="title">
+        <div>Chocolate Cream Frappucino</div>
+        <div class="price">P185.00</div>
+    </div>
+    <h4>Choose Your Size: Pick 1</h4>
+    <div class="variant">
+        <div>
+            <input type="checkbox" id="original" name="flavor" value="original">
+            <label for="tall">Tall</label>
+        </div>
+        <span class="price">+ 10.00</span>
+    </div>
+    <div class="variant">
+        <div>
+            <input type="checkbox" id="spicy" name="flavor" value="spicy">
+            <label for="grande">Grande</label>
+        </div>
+        <span class="price">+ 25.00</span>
+    </div>
+    <div class="variant">
+        <div>
+            <input type="checkbox" id="spicy" name="flavor" value="spicy">
+            <label for="venti">Venti</label>
+        </div>
+        <span class="price">+ 40.00</span>
+    </div>
+
+    <h4>Choice of Milk: Pick 1</h4>
+    <div class="variant">
+        <div>
+            <input type="checkbox" id="spicy" name="flavor" value="spicy">
+            <label for="#">Whole Milk</label>
+        </div>
+        <span class="price"></span>
+    </div>
+    <div class="variant">
+        <div>
+            <input type="checkbox" id="spicy" name="flavor" value="spicy">
+            <label for="#">Sub Soymilk</label>
+        </div>
+        <span class="price">+ 25.00</span>
+    </div>
+    <div class="variant">
+        <div>
+            <input type="checkbox" id="spicy" name="flavor" value="spicy">
+            <label for="#">Sub Breve</label>
+        </div>
+        <span class="price">+ 25.00</span>
+    </div>
+    <div class="variant">
+        <div>
+            <input type="checkbox" id="spicy" name="flavor" value="spicy">
+            <label for="#">Sub Coconutmilk</label>
+        </div>
+        <span class="price">+ 45.00</span>
+    </div>
+    <div class="variant">
+        <div>
+            <input type="checkbox" id="spicy" name="flavor" value="spicy">
+            <label for="#">Sub Oatmilk</label>
+        </div>
+        <span class="price">+ 65.00 </span>
+    </div>
+
+    <h4>Include Whipped Cream Topping?: Pick 1</h4>
+    <div class="variant">
+        <div>
+            <input type="checkbox" id="spicy" name="flavor" value="spicy">
+            <label for="#">With Whipped Cream</label>
+        </div>
+        <span class="price"></span>
+    </div>
+    <div class="variant">
+        <div>
+            <input type="checkbox" id="spicy" name="flavor" value="spicy">
+            <label for="#">Without Whipped Cream</label>
+        </div>
+        <span class="price"></span>
+    </div>
+
+    <h4>Add Syrup? (not as replacement): Optional, max 1</h4>
+    <div class="variant">
+        <div>
+            <input type="checkbox" id="spicy" name="flavor" value="spicy">
+            <label for="#">Add Vanilla Syrup</label>
+        </div>
+        <span class="price">+ 25.00</span>
+    </div>
+    <div class="variant">
+        <div>
+            <input type="checkbox" id="spicy" name="flavor" value="spicy">
+            <label for="#">Add Caramel Syrup</label>
+        </div>
+        <span class="price">+ 25.00</span>
+    </div>
+    <div class="variant">
+        <div>
+            <input type="checkbox" id="spicy" name="flavor" value="spicy">
+            <label for="#">Add Hazelnut Syrup</label>
+        </div>
+        <span class="price">+ 25.00</span>
+    </div>
+    <div class="variant">
+        <div>
+            <input type="checkbox" id="spicy" name="flavor" value="spicy">
+            <label for="#">Add Salted Caramel Syrup</label>
+        </div>
+        <span class="price">+ 25.00</span>
+    </div>
+
+    <h4>Add Syrup Sweetness (use only w/Add Syrup): Optional, max 1</h4>
+    <div class="variant">
+        <div>
+            <input type="checkbox" id="spicy" name="flavor" value="spicy">
+            <label for="#">Add Syrup - Not Sweet</label>
+        </div>
+        <span class="price"></span>
+    </div>
+    <div class="variant">
+        <div>
+            <input type="checkbox" id="spicy" name="flavor" value="spicy">
+            <label for="#">Add Syrup - Less Sweet</label>
+        </div>
+        <span class="price"></span>
+    </div>
+    <div class="variant">
+        <div>
+            <input type="checkbox" id="spicy" name="flavor" value="spicy">
+            <label for="#">Add Syrup - Regular Sweetness</label>
+        </div>
+        <span class="price"></span>
+    </div>
+
+    <h4>Add Sauce: Optional, max 3</h4>
+    <div class="variant">
+        <div>
+            <input type="checkbox" id="spicy" name="flavor" value="spicy">
+            <label for="#">White Mocha Sauce</label>
+        </div>
+        <span class="price">+ 35.00</span>
+    </div>
+    <div class="variant">
+        <div>
+            <input type="checkbox" id="spicy" name="flavor" value="spicy">
+            <label for="#">Mocha Sauce</label>
+        </div>
+        <span class="price">+ 25.00</span>
+    </div>
+    <div class="variant">
+        <div>
+            <input type="checkbox" id="spicy" name="flavor" value="spicy">
+            <label for="#">Strawberry Sauce</label>
+        </div>
+        <span class="price">+ 35.00</span>
+    </div>
+
+    <h4>Add Inclusion: Optional, max 3</h4>
+    <div class="variant">
+        <div>
+            <input type="checkbox" id="spicy" name="flavor" value="spicy">
+            <label for="#">Frappucino Chips</label>
+        </div>
+        <span class="price">+ 35.00</span>
+    </div>
+    <div class="variant">
+        <div>
+            <input type="checkbox" id="spicy" name="flavor" value="spicy">
+            <label for="#">Coffee Jelly</label>
+        </div>
+        <span class="price">+ 40.00</span>
+    </div>
+    <div class="variant">
+        <div>
+            <input type="checkbox" id="spicy" name="flavor" value="spicy">
+            <label for="#">Pomegranate Pearls</label>
+        </div>
+        <span class="price">+ 40.00</span>
+    </div>
+
+    <div>
+        <span>Quantity:</span>
+        <button class="btn" id="decrement">-</button>
+        <span id="quantity">1</span>
+        <button class="btn" id="increment">+</button>
+    </div>
+    <a class="btn" href="/index.html" target="_blank">Add to Cart</a>
+</div>
+
+<script>
+    var decrementBtn = document.getElementById('decrement');
+    var incrementBtn = document.getElementById('increment');
+    var quantityDisplay = document.getElementById('quantity');
+
+    decrementBtn.addEventListener('click', function() {
+        var quantity = parseInt(quantityDisplay.textContent);
+        if (quantity > 1) {
+            quantityDisplay.textContent = quantity - 1;
+        }
+    });
+
+    incrementBtn.addEventListener('click', function() {
+        var quantity = parseInt(quantityDisplay.textContent);
+        quantityDisplay.textContent = quantity + 1;
+    });
+</script>
+
+</body>
+</html>
